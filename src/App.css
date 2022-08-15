@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /* color: #000; */
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+  }
+  *::selection{
+      background: #d11450;
+      color: #fff;
+  }
+  html{
+      font-size: 62.5%;
+      overflow-x: hidden;
+      scroll-padding-top:6rem;
+      scroll-behavior: smooth;
+  }
+  header{
+
+      color: #fff;
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      background: #d11450;
+      height: 5rem;
+      width:100%;
+      z-index:100;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:2rem 1%;
+  }
+  header a{
+        color: #fff;
+        text-decoration: none;
+  }
+  header img{
+    border-radius: 100%;
+    width: 8rem;
+    height: 8rem;
+    margin-left: 4px;
+  }
+  header h1{
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    left: -4%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+  }
+  header h1 span{
+    color: yellow;
+    font-size: 36px;
+  }
+  header nav{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid #fff; */
+  }
+  main .intro-video video{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 100%; */
+    /* border: 1px solid #fff; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  main .packages,.bookNow{
+    position: relative;
+    width: 100%;
+    height: 60rem;
+    border: 2px solid #f9f90a;
+    /* Bg img patterns(1) */
+    background-image: image('./patterns (1).png');
+   display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  }
+  main h3{
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    top: 0%;
+    
+    color: #d11450;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+/* Holiday Packages Cards~Containers */
+/* From uiverse.io by @Aankirz */
+
+.card_box {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, #fff 0%, #ffffff);
+  box-shadow: 0 5px 5px #d11450;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s;
+  margin: 10px;
+  /* display: none; */
+}
+
+.card_box:hover {
+  box-shadow: 0 25px 50px #d11450;
+  transform: scale(1.1);
+  border-radius: 0px;
+}
+
+.card_box span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box span::before {
+  content: 'Premium';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #ff6547 0%, #ffb144  51%, #ff7053  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+.card_box span::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+
+ .bookNow .bookAnimation{
+  position: relative;
+  
+  transform: translate(72%, 2%);
+  right: 24%;
+  top: -2%;
+  align-self: center;
+  
+  box-shadow: 16px 14px 78px 32px #FFB6B6;
+ }
+
+ /* Book form Card */
+ .formCard {
+  width:60%;
+  height: 88%;
+  /* margin: 20px 0px; */
+  /* margin-right: ; */
+  position: relative;
+  top: 30px;
+  left: 20px;
+  /* transform: translate(); */
+  border-radius: 30px;
+  background: #ffff;
+  box-shadow: 15px 5px 30px #f2bac8,
+              -15px -5px 30px #ffffff;
+  /* align-self: center; */
+
+ }
+.formCard form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: -60rem;
+}
+ /* Input Form */
+ /* From uiverse.io by @alexruix */
+.input-group {
+  position: relative;
+ }
+ 
+ .input {
+  border: solid 1.5px #9e9e9e;
+  border-radius: 1rem;
+  background: none;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .user-label {
+  position: absolute;
+  left: 15px;
+  color: #e8e8e8;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.4,0,0.2,1);
+ }
+ 
+ .input:focus, input:valid {
+  outline: none;
+  border: 1.5px solid #1a73e8;
+ }
+ 
+ .input:focus ~ label, input:valid ~ label {
+  transform: translateY(-50%) scale(0.8);
+  background-color: #212121;
+  padding: 0 .2em;
+  color: #2196f3;
+ }
